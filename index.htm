@@ -1,0 +1,43 @@
+<HTML><HEAD><TITLE>HON KY DOCS</title></head>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Debut du script
+
+function rado()
+{
+
+i=Math.ceil(150000*Math.random());
+if (i==0) i=1;
+ii=Math.ceil(i/3000);
+
+a=(ii-1)*3000+1 ;
+b=(ii)*3000 ;
+
+tti = i.toString();
+tta = a.toString();
+ttb = b.toString();
+
+ni = tti.length; 
+na = tta.length;
+nb = ttb.length;
+
+for ( f=ni ; f<6 ; f++ ) { tti="0"+tti ; }
+for ( f=na ; f<6 ; f++ ) { tta="0"+tta ; }
+for ( f=nb ; f<6 ; f++ ) { ttb="0"+ttb ; }
+
+urella="https://www.nutellauniquecommetoi.be/assets/img/jars-png/"+tta+"_"+ttb+"/"+tti+".png"
+
+document.getElementById("myImg").src = urella ; 
+
+}		
+-->
+</script>
+
+<BODY onLoad="rado();">
+<CENTER>
+<P><BR><BR>
+<img id="myImg" src="" onClick="rado();">
+
+
+</body>
+
+</html>
